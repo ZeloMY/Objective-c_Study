@@ -62,9 +62,11 @@
     }
 }
 
+
+
 - (IBAction)testLoadRequest:(id)sender {
     
-    NSURL * url = [NSURL URLWithString: @"https://www.baidu.com/"];
+    NSURL * url = [NSURL URLWithString: @"http://123.57.73.171:8097/download.html"];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
     self.webView.delegate = self;
@@ -76,6 +78,8 @@
     NSLog(@"%@", [webView stringByEvaluatingJavaScriptFromString:
                   @"document.body.innerHTML"]);
 }
+
+
 
 
 @end
