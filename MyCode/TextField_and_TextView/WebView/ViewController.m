@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()<UIWebViewDelegate>
+- (IBAction)testAlertView:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
@@ -82,4 +83,6 @@
 
 
 
+- (IBAction)testAlertView:(id)sender {
+}
 @end

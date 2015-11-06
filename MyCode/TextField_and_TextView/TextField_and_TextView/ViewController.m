@@ -10,6 +10,7 @@
 
 //实现委托协议
 @interface ViewController ()<UITextFieldDelegate,UITextViewDelegate>
+- (IBAction)testActionSheet:(id)sender;
 
 
 
@@ -85,4 +86,6 @@
 
 
 
+- (IBAction)testActionSheet:(id)sender {
+}
 @end

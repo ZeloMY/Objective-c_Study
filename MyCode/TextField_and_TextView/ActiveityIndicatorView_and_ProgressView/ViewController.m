@@ -13,7 +13,11 @@
     // 定时器
     NSTimer *myTimer;
 }
+
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *MyActivityIndicatorView;
+
+
+//UI上的控件
 
 @property (weak, nonatomic) IBOutlet UIProgressView *myProgressView;
 
@@ -25,11 +29,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    _progrrss = [[UIProgressView alloc] initWithFrame:CGRectMake(100, 100, 100, 20)];
-//    [self.view addSubview:_progrrss];
+    //将空间显示在页面上
+    _progrrss = [[UIProgressView alloc] initWithFrame:CGRectMake(150, 400, 100, 20)];
+
+    [self.view addSubview:_progrrss];
     
-    __weak UIProgressView *pro = _myProgressView;
-    pro.tag = 100;
+    
+//    __weak UIProgressView *pro = _myProgressView;
+//    pro.tag = 100;
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -38,6 +47,7 @@
     // Dispose of any resources that can be recreated.
 }
 // upload 事件  加载条运作
+
 -(IBAction)startToMove:(id)sender
 {
     if([self.MyActivityIndicatorView isAnimating])
@@ -60,10 +70,11 @@
 }
 //方法
 -(void)download{
-    UIProgressView *pro1 = (UIProgressView *)[self.view viewWithTag:100];
-   pro1.progress=pro1.progress+0.1;
-//    _progrrss.progress = _progrrss.progress + 0.1;
-    if(pro1.progress== 1)
+//    UIProgressView *pro1 = (UIProgressView *)[self.view viewWithTag:100];
+//   pro1.progress=pro1.progress+0.1;
+    
+    _progrrss.progress = _progrrss.progress + 0.1;
+    if(_progrrss.progress== 1)
     {
         [myTimer invalidate];//停止定时器
     
@@ -77,4 +88,6 @@
     
 }
 
+- (IBAction)testAlertView:(UIButton *)sender {
+}
 @end

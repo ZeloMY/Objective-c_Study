@@ -9,10 +9,30 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>AlertViewActionSheetSample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>NavigationBarSample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>TextField_and_TextView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>UIAlertController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>UIToolbar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>WebView.xcscheme</key>
 		<dict>
@@ -27,6 +47,26 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7B2452EF1BE751D300A185A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B24530A1BE8804300A185A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B2453251BE8916900A185A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B2453401BE89D7300A185A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7BF15BD01BE201200025BD1A</key>
 		<dict>
 			<key>primary</key>

@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)demoAlertView:(id)sender;
+- (IBAction)testAlertView:(id)sender;
 @property (weak, nonatomic) IBOutlet UISwitch *leftSwitch;
 
 @property (weak, nonatomic) IBOutlet UISwitch *RightSwitch;
@@ -63,4 +65,9 @@
     }
 }
 
+- (IBAction)demoAlertView:(id)sender {
+}
+
+- (IBAction)testAlertView:(id)sender {
+}
 @end
